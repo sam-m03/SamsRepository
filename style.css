@@ -1,0 +1,273 @@
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #042326, #1D7373);
+    /* Linear gradient background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h4 {
+    color: #ffffff;
+    /* Gray color */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Header Section */
+header {
+    background-color: #0A3A40;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.navigation h4 {
+    margin: 0;
+}
+
+.navigation h4 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    margin: 0 15px;
+}
+
+.navigation h4 a:hover {
+    color: #f5e504;
+    font-size: 20px;
+}
+
+/* Home Section */
+#homeWrapper {
+    text-align: center;
+    padding: 50px 5%;
+    font-size: 0.9em;
+}
+
+#homeWrapper h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+#homeWrapper p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* About Me Section */
+#aboutMe {
+    background-color: #0A3A40;
+    color: #ffffff;
+    padding: 50px 5%;
+}
+
+#aboutMe h1 {
+    text-align: center;
+    font-size: 2em;
+}
+#aboutMe h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#aboutWrapper p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+#bitmoji img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Video Section */
+#videoDiv {
+    text-align: center;
+    padding: 20px;
+}
+
+#videoDiv video {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid #107361;
+    border-radius: 10px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #042326;
+    color: #ffffff;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.projectsWrapper h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #0F5959;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.contactWrapper h1 {
+    color: #ffffff;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #107361;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submitButton .button {
+    background-color: #107361;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submitButton .button:hover {
+    background-color: #1D7373;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0A3A40;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer h1 {
+    font-size: 1.5em;
+}
+
+footer p,
+footer h2 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#projects {
+    background-color: #042326;
+    color: #ffffff;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.projectsWrapper h1 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #0A3A40;
+    border-radius: 10px;
+}
+
+.project h2 {
+    font-size: 1.5em;
+    color: #f5e504;
+}
+
+.project p {
+    font-size: 15px;
+    margin: 15px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectImgs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectImgs img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 3px solid #107361;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    #homeWrapper h1,
+    #aboutMe h1,
+    .projectsWrapper h1,
+    .contactWrapper h1 {
+        font-size: 1.75em;
+    }
+
+    .navigation h4 a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    #bitmoji img {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    #videoDiv video {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.75em;
+    }
+
+    #homeWrapper h1,
+    #aboutMe h1,
+    .projectsWrapper h1,
+    .contactWrapper h1 {
+        font-size: 1.5em;
+    }
+
+    #bitmoji img {
+        width: 100px;
+    }
+}
